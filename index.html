@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  <div class="grid">
+
+  <div class="grid-item person">
+    <div class="jeremy">
+      <img class="headshot" src="images/image-jeremy.png" alt="Jeremy headshot" />
+      <div>
+        <p>Report for</p>
+        <h1>Jeremy <span class="last">Robson</span></h1>
+      </div>
+    </div>
+    <div class="bottom">  
+      <button id="daily">Daily</button> 
+      <button id="weekly">Weekly</button>
+      <button id="monthly">Monthly</button>
+    </div>
+  </div> <!--grid-item closure-->
+
+  <div class="grid-item">
+    <div class="behind work">
+      <img src="images/icon-work.svg" alt=""/>
+    </div>
+    <div class="card">
+      <div class="activity">
+        <p>Work</p>
+        <img src="images/icon-ellipsis.svg" alt="" />
+      </div>
+      <div class="time">
+        <h1 id="work-time">5 hrs</h1>
+        <p class="previous" id="work-previous">Yesterday - <span>7 hrs</span></p>
+      </div>
+    </div>
+  </div> <!--grid-item closure-->
+
+  <div class="grid-item">
+    <div class="behind play">
+      <img src="images/icon-play.svg" alt=""/>
+    </div>
+    <div class="card">
+      <div class="activity">
+        <p>Play</p>
+        <img src="images/icon-ellipsis.svg" alt="" />
+      </div>
+      <div class="time">
+        <h1 id="play-time">1 hr</h1>
+        <p class="previous" id="play-previous">Yesterday - <span>2 hrs</span></p>
+      </div>
+    </div>
+  </div> <!--grid-item closure-->
+      
+  <div class="grid-item">
+    <div class="behind study">
+      <img src="images/icon-study.svg" alt=""/>
+    </div>
+    <div class="card">
+      <div class="activity">
+        <p>Study</p>
+        <img src="images/icon-ellipsis.svg" alt="" />
+      </div>
+      <div class="time">
+        <h1 id="study-time">0 hrs</h1>
+        <p class="previous" id="study-previous">Yesterday - <span>1 hr</span></p>
+      </div>
+    </div>
+  </div> <!--grid-item closure-->
+    
+  <div class="grid-item">
+    <div class="behind exercise">
+      <img src="images/icon-exercise.svg" alt=""/>
+    </div>
+    <div class="card">
+      <div class="activity">
+        <p>Exercise</p>
+        <img src="images/icon-ellipsis.svg" alt="" />
+      </div>
+      <div class="time">
+        <h1 id="exercise-time">1 hr</h1>
+        <p class="previous" id="exercise-previous">Yesterday - <span>1 hr</span></p>
+      </div>
+    </div>
+  </div> <!--grid-item closure-->
+
+  <div class="grid-item">
+    <div class="behind social">
+      <img src="images/icon-social.svg" alt=""/>
+    </div>
+    <div class="card">
+      <div class="activity">
+        <p>Social</p>
+        <img src="images/icon-ellipsis.svg" alt="" />
+      </div>
+      <div class="time">
+        <h1 id="social-time">1 hr</h1>
+        <p class="previous" id="social-previous">Yesterday - <span>3 hrs</span></p>
+      </div>
+    </div>
+  </div> <!--grid-item closure-->
+    
+    <div class="grid-item">
+      <div class="behind self-care">
+        <img src="images/icon-self-care.svg" alt=""/>
+      </div>
+      <div class="card">
+        <div class="activity">
+          <p>Self-care</p>
+          <img src="images/icon-ellipsis.svg" alt="" />
+        </div>
+        <div class="time">
+          <h1 id="self-care-time">0 hrs</h1>
+          <p class="previous" id="self-care-previous">Yesterday - <span>1 hr</span></p>
+        </div>
+      </div>
+    </div> <!--grid-item closure-->
+
+  </div> <!--grid closure-->
+
+  <script src="app.js"></script>
+</body>
+</html>
