@@ -155,6 +155,7 @@ button:active, button:visited {
 
 .previous {
     color: hsl(236, 100%, 87%);
+    margin-bottom: 0;
 }
 
 h1 {
@@ -175,9 +176,10 @@ h1 {
     display: block;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 
     body {
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -185,14 +187,13 @@ h1 {
     }
 
     .grid {
-        height: 80%;
         grid-template-areas:
         "person work play study"
         "person exercise social selfcare"
     }
 
     .grid-item {
-        
+        width: 100%;
     }
 
     .person {
