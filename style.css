@@ -187,6 +187,7 @@ h1 {
     }
 
     .grid {
+        width: 80%;
         grid-template-areas:
         "person work play study"
         "person exercise social selfcare"
